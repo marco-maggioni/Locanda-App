@@ -1,1 +1,1 @@
-web: gunicorn newsletter.wsgi -log-file -
+web: gunicorn newsletter.wsgi
