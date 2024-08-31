@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  registrati - Locanda Mandelli
+{% endblock %}
+
+{% block content %}
+
+<header class="page-header">
+<div class="container">
+<h1 class="lobster-two-bold-italic">Locanda Mandelli</h1>
+</div>
+</header>
+
+<div class="container">
+ <h3>La Newsletter della Locanda!</h3>
+ <h4>compila il form e rimani informato sulle nostre proposte:</h4>
+ <br>
+ <form method="POST" action ="{% url 'form_view' %}" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    {% if myerror != ' ' %}
+    <div class="alert alert-danger">
+      <p><strong>{{ myerror }}</strong></p>
+    </div>
+    {% endif %}
+
+    {% for field in form %}
+      <div class="form-group">
+      {% if field.name == "email" %}
+        {{field }}
+        <small class="form-text text-muted">Non la condivideremo mai con nessuno.</small>
+      {% elif field.name == "phone" %}
+        {{field }}
+        <small class="form-text text-muted">Facoltativo.</small>
+      {% elif field.name == "consenso" %}
+        <small class="form-text text-muted"><strong>"Consento l'utilizzo dei miei dati personali secondo quanto previsto dai termini di legge"</strong></small>
+        {{field }}
+      {% elif field.name == "invio" %}
+        <small class="form-text text-muted"><strong>"Autorizzo l'invio di contenuti e materiale pubblicitario relativi a Locanda Mandelli"</strong></small>
+        {{field }}
+      {% else %}
+        {{field }}
+      {% endif %}
+      </div>
+    {% endfor%}
+    <button class="btn btn-lg btn-primary btn-block mt-5" type="submit">Unisciti alla community</button>
+ </form>
+ <br>
+</div>
+
+{% endblock %}  

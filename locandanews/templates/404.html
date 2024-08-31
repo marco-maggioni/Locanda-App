@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Errore
+{% endblock %}
+
+{% block content %}
+
+<header class="thank-header">
+<div class="container">
+<h1 class="lobster-two-bold-italic">Oops..!</h1>
+<h6>Qualcosa è andato storto</h6>
+</div>
+</header>
+
+<div class="container">
+ <div class="row">
+  <div class="col-md-6">
+	<h2>Al momento la pagina richiesta non sembra raggiungibile</h2>
+	<br><br>
+	<h4>Ti consigliamo di riprovare più tardi o di contattare direttamente la Locanda Mandelli</h4>
+  </div>
+  <div class="col-md-6">
+	<img src="{% static 'logo.png' %}" class="logo" alt="Logo Locanda Mandelli"/>
+  </div>
+ </div>
+</div>
+{% endblock %}  

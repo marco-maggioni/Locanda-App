@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Grazie! - Locanda Mandelli
+{% endblock %}
+
+{% block content %}
+
+<header class="thank-header">
+<div class="container">
+<h1 class="lobster-two-bold-italic">Grazie!</h1>
+<h6>da Locanda Mandelli</h6>
+</div>
+</header>
+
+<div class="container">
+ <div class="row">
+  <div class="col-md-6">
+	<h2>Siamo davvero felici che tu sia entrato a far parte della nostra community :-)</h2>
+	<br><br>
+	<h4>Ci sentiamo presto con le nostre ultime novità!</h4>
+  </div>
+  <div class="col-md-6">
+	<img src="{% static 'logo.png' %}" class="logo" alt="Logo Locanda Mandelli"/>
+  </div>
+ </div>
+</div>
+{% endblock %}  

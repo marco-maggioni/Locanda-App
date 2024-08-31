@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Verifica indirizzo di posta
+{% endblock %}
+
+{% block content %}
+
+<header class="thank-header">
+<div class="container">
+<h1 class="lobster-two-bold-italic">Locanda Mandelli</h1>
+</div>
+</header>
+
+<div class="container">
+ <div class="row">
+  <div class="col-md-6">
+	<h2>Ciao {{name}}, abbiamo inviato una email all'indirizzo {{mail}}</h2>
+	<br><br>
+	<h4>Attendi qualche secondo e poi controlla la tua casella di posta per confermare l'iscrizione</h4>
+    <br><br>
+	<h4><strong>*Pssss: controlla anche nelle spam!</strong></h4>
+  </div>
+  <div class="col-md-6">
+	<img src="{% static 'logo.png' %}" class="logo" alt="Logo Locanda Mandelli"/>
+  </div>
+ </div>
+</div>
+{% endblock %}  
