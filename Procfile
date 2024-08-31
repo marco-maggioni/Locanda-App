@@ -1,1 +1,1 @@
-web: gunicorn newsletter.wsgi
+web: gunicorn locandanews.wsgi -log-file -
