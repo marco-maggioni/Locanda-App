@@ -1,1 +1,1 @@
-web: gunicorn locandanews.wsgi
+web: gunicorn newsletter.wsgi
