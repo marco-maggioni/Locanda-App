@@ -1,0 +1,40 @@
+
+.lobster-two-bold {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lobster-two-bold-italic {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.page-header {
+	color: #C25100;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
+}
+
+.thank-header {
+	text-align: center;
+	color: #C25100;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
+}
+
+.row {
+	text-align: center;
+}
+
+h1{
+	font-size: 3.0rem;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}

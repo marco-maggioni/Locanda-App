@@ -3,7 +3,7 @@ from . import views
 
 urlpatterns = [
     #path('locandanews/', views.news, name='news'),
-    path('/', views.home name='home'),
+    path('', views.home, name='home'),
 	path('locandaform/', views.form_view, name='form_view'),
 	path('locandaform/thankyou/<str:mail>/', views.thanks_view, name='thanks'),
 	path('locandaform/checkmail', views.checking, name='check'),
