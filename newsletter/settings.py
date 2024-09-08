@@ -38,6 +38,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
+CSRF_TRUSTED_ORIGINS = ['https://locandamandelliapp-f3de9101a057.herokuapp.com']
+
 
 # Application definition
 
