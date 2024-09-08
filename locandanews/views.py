@@ -61,7 +61,7 @@ def sendmail(name, mail):
 	sender_psw = os.environ.get("SENDER_PSW")
 	recipient_email = [mail]
 	subject = "Locanda Mandelli - Conferma il tuo indirizzo di posta"
-	page_url = "http://127.0.0.1:8000/locandaform/thankyou/" + str(mail) + "/"
+	page_url = "https://locandamandelliapp-f3de9101a057.herokuapp.com/locandaform/thankyou/" + str(mail) + "/"
 	body = """\
 	<html>
   		<body>
@@ -70,9 +70,9 @@ def sendmail(name, mail):
       		Clicca <a href=""" + page_url + """>qui</a> per confermare la tua email.</p>
 	  		<br>
     		<p>Oppure copia ed incolla il seguente link nel browser del tuo smartphone:</p>
-			<p><u>http://127.0.0.1:8000/locandaform/thankyou/"""+ str(mail) + "/" +"""</u></p>
+			<p><u>https://locandamandelliapp-f3de9101a057.herokuapp.com/locandaform/thankyou/"""+ str(mail) + "/" +"""</u></p>
 			<br>
-    		<p>Ci sentiamo presto con le nostre novità!</p>
+    		<p>Ci sentiamo presto con le nostre ultime novità!</p>
 			<br>
 			<p>Team Locanda Mandelli</p>
 			<div>
